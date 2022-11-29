@@ -16,8 +16,9 @@ font-family: 'Jost', sans-serif;*/
 }
 
 .container{
-    width: 1440px;/*1440*/
+    max-width: 1440px;/*1440*/
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 /*HEADER*/
@@ -54,14 +55,13 @@ font-family: 'Jost', sans-serif;*/
 .header__content{
     background-image: url("../img/header__content-bg.jpg");
     background-repeat: no-repeat;
-    background-size:100% 100%;
-    border-radius: 0px 0px 0px 290px;
-    background-clip:initial;
+    height: 100vh;
+    background-size: cover;
 }
 
 .header__content-inner{
     flex-wrap: nowrap;
-    width: 595px;
+    max-width: 595px;
 }
 
 .header__title{
@@ -147,7 +147,7 @@ font-family: 'Jost', sans-serif;*/
 }
 
 .view-more__inner-item{
-    width: 317px;
+    max-width: 317px;
     flex-wrap: wrap;
 }
 
@@ -230,7 +230,7 @@ font-family: 'Jost', sans-serif;*/
 }
 
 .designs__content{
-    width: 531px;
+    width: 45%;
     flex-wrap: wrap;
 }
 
@@ -310,7 +310,7 @@ font-family: 'Jost', sans-serif;*/
 .designs__img{
     background-image: url("../img/designs-img.jpg");
     background-repeat: no-repeat;
-    width: 592px;
+    width: 50%;
 }
 
 /*ABOUT*/
@@ -758,10 +758,6 @@ font-family: 'Jost', sans-serif;*/
     padding-top: 14px;
 }
 
-/* .blogs__arrow-btn{
-
-} */
-
 .blogs__arrow-btn> span{
     height: 52px;
     width: 52px;
@@ -834,7 +830,69 @@ font-family: 'Jost', sans-serif;*/
 
 /*FOOTER*/
 
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 81px;
+}
 
+.footer__description{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    color: var(--light-grey);
+    flex-wrap: wrap;
+    padding-bottom: 29.42px;
+}
+
+.logo__list-item{
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 40px;
+}
+
+.footer__logo,
+.footer__menu{
+    max-width: 25%;
+    flex-wrap: wrap;
+}
+
+.footer__menu{
+    padding: 39px 0 0;
+}
+
+.footer__menu-title{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: 0.22px;
+    color: var(--grey);
+}
+
+.footer-menu__list{
+    padding-top: 21px;
+}
+
+.footer-menu__list-item{
+    list-style-type: none;
+    padding-bottom: 29px;
+}
+
+.footer-menu__link{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    color: var(--light-grey);
+    text-decoration: none;
+}
 
 .footer__copyright{
     font-family: 'Jost';
